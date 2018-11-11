@@ -3,18 +3,6 @@
     <head>
       <meta charset="UTF-8">
       <title>ログイン--lamourfleur ラ・ムールフルール　花屋通販サイト</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css"/>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
-      <script>
-        $(document).ready(function() {
-          $('.datepicker').datepicker();
-        });
-      </script>
     </head>
 
     <body class="box">
@@ -57,11 +45,12 @@
               <label for="post" class="col- control-label">郵便番号 （必須）</label>
               <div class="col-">
                 <input type="text" class="form-control" id="post" placeholder="例) 1000000">
+                <button onclick="getAddress(event)">Get code</button>
               </div>
             </div>
             <div class="form-group">
               <label for="name">都道府県 （必須）</label>
-              <select class="form-control">
+              <select class="form-control" id="region">
                 <option value=""></option>
                 <option value="1">北海道</option>
                 <option value="2">青森県</option>

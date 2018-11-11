@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+  <html lang=ja>
+    <head>
+      <meta charset="UTF-8">
+      <title>ログイン--lamourfleur ラ・ムールフルール　花屋通販サイト</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $('.datepicker').datepicker();
+        });
+      </script>
+    </head>
+
+    <body class="box">
+      <div class="container">
+      <div class="row">
+        <header class="header">
+          <div class="logo"><a href="">L"amourFleur ラ・ムールフルール</a></div>
+          <div class="wrap_gnav">
+            <nav class="gnav">
+              <ul>
+                <li class="home"><a href=""><span>HOME</span></a></li>
+                <li class="mypage"><a href=""><span>MYPAGE</span></a></li>
+                <li class="cart"><a href=""><span>CART</span></a></li>
+              </ul>
+            </nav>
+          </div>
+          <a id="btn_gnav"><span></span></a>
+          <div class="overlay"></div>
+        </header>
+      </div>
+      <div class="row">
+        <div class="col-md-2">left</div>
+        <div class="col-md-8">
+          <h1>サインアップ</h1>
+
+          <form role="form">
+            <div class="form-group">
+              <label for="name" class="col- control-label">お名前 （必須）</label>
+              <div class="col-">
+                <input type="text" class="form-control" id="name" placeholder="例) 花山　太郎">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="katakana" class="col- control-label">お名前(フリガナ) </label>
+              <div class="col-">
+                <input type="text" class="form-control" id="katakana" placeholder="例) ハナヤマ　タロウ">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="post" class="col- control-label">郵便番号 （必須）</label>
+              <div class="col-">
+                <input type="text" class="form-control" id="post" placeholder="例) 1000000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">都道府県 （必須）</label>
+              <select class="form-control">
+                <option value=""></option>
+                <option value="1">北海道</option>
+                <option value="2">青森県</option>
+                <option value="3">岩手県</option>
+                <option value="4">秋田県</option>
+                <option value="5">宮城県</option>
+                <option value="6">山形県</option>
+                <option value="7">福島県</option>
+                <option value="8">茨城県</option>
+                <option value="9">栃木県</option>
+                <option value="10">群馬県</option>
+                <option value="11">埼玉県</option>
+                <option value="12">千葉県</option>
+                <option value="13">東京都</option>
+                <option value="14">神奈川県</option>
+                <option value="15">新潟県</option>
+                <option value="16">福井県</option>
+                <option value="17">石川県</option>
+                <option value="18">富山県</option>
+                <option value="19">静岡県</option>
+                <option value="20">山梨県</option>
+                <option value="21">長野県</option>
+                <option value="22">愛知県</option>
+                <option value="23">岐阜県</option>
+                <option value="24">三重県</option>
+                <option value="25">和歌山県</option>
+                <option value="26">滋賀県</option>
+                <option value="27">奈良県</option>
+                <option value="28">京都府</option>
+                <option value="29">大阪府</option>
+                <option value="30">兵庫県</option>
+                <option value="31">岡山県</option>
+                <option value="32">広島県</option>
+                <option value="33">鳥取県</option>
+                <option value="34">島根県</option>
+                <option value="35">山口県</option>
+                <option value="36">香川県</option>
+                <option value="37">徳島県</option>
+                <option value="38">愛媛県</option>
+                <option value="39">高知県</option>
+                <option value="40">福岡県</option>
+                <option value="41">佐賀県</option>
+                <option value="42">長崎県</option>
+                <option value="43">大分県</option>
+                <option value="44">熊本県</option>
+                <option value="45">宮崎県</option>
+                <option value="46">鹿児島県</option>
+                <option value="47">沖縄県</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="address1" class="col- control-label">住所１ （必須）</label>
+              <div class="col-">
+                <input type="text" class="form-control" id="address1" placeholder="市区町村、番地等">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address2" class="col- control-label">住所２</label>
+              <div class="col-">
+                <input type="text" class="form-control" id="address2" placeholder="アパート・マンション名、部屋番号等">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mail" class="col- control-label">メールアドレス</label>
+              <div class="col-">
+                <input type="email" class="form-control" id="mail" placeholder="例)　lamourfleur@gmail.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tle" class="col- control-label">電話番号 （必須）</label>
+              <div class="col-">
+                <input type="text" class="form-control" id="tle" placeholder="例) 03-1234-5678">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="birthday" class="col- control-label">生年月日</label>
+              <div class="col-">
+                <div class="col-sm-9">
+                  <input type="text" id="birthDate" class="form-control datepicker">
+                  <div class="input-group-addon">
+                      <span class="glyphicon glyphicon-th"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pass" class="col- control-label">任意のログインパスワード （必須）</label>
+              <div class="col-">
+                <input type="password" class="form-control" id="pass" placeholder="パスワード">
+              </div>
+              <small id="emailHelp" class="form-text text-muted">※３～１２文字の英数字、ハイフン、アンダーバーでご指定ください。</small>
+            </div>
+            <div class="form-group">
+              <label for="pass2" class="col- control-label">インパスワード確認 （必須）</label>
+              <div class="col-">
+                <input type="password" class="form-control" id="pass2" placeholder="パスワード">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-">
+                <button type="button" class="btn btn-primary btn-lg">登録</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col">right</div>
+      </div>  
+      <div class="row">
+          <footer class="footer">底部</footer>
+      </div>
+    </div>
+    </body>
+  </html>
